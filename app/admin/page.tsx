@@ -33,7 +33,7 @@ export default async function AdminDashboard() {
     <div className="p-8">
       <div className="mb-8">
         <h1 className="font-display text-2xl font-bold text-navy-900">Dashboard</h1>
-        <p className="text-gray-500 text-sm mt-1">Overview of OmniRide platform activity</p>
+        <p className="text-gray-500 text-sm mt-1">Overview of OmneRide platform activity</p>
       </div>
 
       {/* Stat cards */}

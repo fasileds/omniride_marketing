@@ -94,7 +94,7 @@ export default function ProblemSolution() {
 
             <div className="relative">
               <span className="inline-flex items-center gap-2 bg-gold-500/20 text-gold-400 text-xs font-bold px-3 py-1.5 rounded-full mb-6 uppercase tracking-wide border border-gold-500/30">
-                <CheckCircle2 size={13} /> The OmniRide Way
+                <CheckCircle2 size={13} /> The OmneRide Way
               </span>
               <h3 className="font-display text-xl font-bold text-white mb-6">
                 Fast, trusted, community-powered

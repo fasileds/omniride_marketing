@@ -6,13 +6,13 @@ export function welcomeEmail(fullName: string, role: string): { subject: string;
     : 'both travel and send'
 
   return {
-    subject: `You're on the OmniRide waitlist, ${firstName}! 🇪🇹`,
+    subject: `You're on the OmneRide waitlist, ${firstName}! 🇪🇹`,
     html: `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to OmniRide</title>
+  <title>Welcome to OmneRide</title>
 </head>
 <body style="margin:0;padding:0;background:#F8F9FC;font-family:'Inter',Arial,sans-serif;">
   <table width="100%" cellpadding="0" cellspacing="0" style="background:#F8F9FC;padding:40px 16px;">
@@ -24,7 +24,7 @@ export function welcomeEmail(fullName: string, role: string): { subject: string;
           <tr>
             <td style="background:#0F2447;border-radius:16px 16px 0 0;padding:32px 40px;text-align:center;">
               <h1 style="margin:0;font-size:28px;font-weight:800;color:#ffffff;letter-spacing:-0.5px;">
-                <span style="color:#F5A623;">Omni</span>Ride
+                <span style="color:#F5A623;">Omne</span>Ride
               </h1>
               <p style="margin:8px 0 0;color:rgba(255,255,255,0.6);font-size:13px;">Ethiopia's Peer-to-Peer Delivery Network</p>
             </td>
@@ -42,7 +42,7 @@ export function welcomeEmail(fullName: string, role: string): { subject: string;
               </h2>
 
               <p style="margin:0 0 16px;font-size:15px;line-height:1.7;color:#4b5563;">
-                You've been added to the OmniRide waitlist. You signed up to <strong style="color:#0F2447;">${roleLabel}</strong> — we'll make sure you get priority access when we launch in your area.
+                You've been added to the OmneRide waitlist. You signed up to <strong style="color:#0F2447;">${roleLabel}</strong> — we'll make sure you get priority access when we launch in your area.
               </p>
 
               <p style="margin:0 0 28px;font-size:15px;line-height:1.7;color:#4b5563;">
@@ -52,7 +52,7 @@ export function welcomeEmail(fullName: string, role: string): { subject: string;
               <!-- Steps -->
               <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:32px;">
                 ${[
-                  ['📬', 'Launch notification', "You'll be the first to know when OmniRide opens in your city."],
+                  ['📬', 'Launch notification', "You'll be the first to know when OmneRide opens in your city."],
                   ['🎁', 'Founding member perks', 'Early users get reduced fees and exclusive badges on their profile.'],
                   ['📢', 'Blog updates', "We'll send you stories, guides, and progress updates along the way."],
                 ].map(([icon, title, desc]) => `
@@ -73,13 +73,13 @@ export function welcomeEmail(fullName: string, role: string): { subject: string;
 
               <!-- CTA -->
               <div style="text-align:center;margin-bottom:32px;">
-                <a href="https://omniride.et" style="display:inline-block;background:#F5A623;color:#0F2447;font-weight:700;font-size:15px;text-decoration:none;padding:14px 32px;border-radius:50px;">
-                  Visit OmniRide →
+                <a href="https://omneride.com" style="display:inline-block;background:#F5A623;color:#0F2447;font-weight:700;font-size:15px;text-decoration:none;padding:14px 32px;border-radius:50px;">
+                  Visit OmneRide →
                 </a>
               </div>
 
               <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">
-                You're receiving this because you signed up at omniride.et.
+                You're receiving this because you signed up at omneride.com.
                 No spam — we'll only contact you with launch news and updates.
               </p>
             </td>
@@ -89,8 +89,8 @@ export function welcomeEmail(fullName: string, role: string): { subject: string;
           <tr>
             <td style="padding:24px 40px;text-align:center;">
               <p style="margin:0;font-size:12px;color:#9ca3af;">
-                © ${new Date().getFullYear()} OmniRide Technologies PLC · Addis Ababa, Ethiopia<br/>
-                <a href="mailto:hello@omniride.et" style="color:#6b7280;text-decoration:none;">hello@omniride.et</a>
+                © ${new Date().getFullYear()} OmneRide Technologies PLC · Addis Ababa, Ethiopia<br/>
+                <a href="mailto:hello@omneride.et" style="color:#6b7280;text-decoration:none;">hello@omneride.et</a>
               </p>
             </td>
           </tr>

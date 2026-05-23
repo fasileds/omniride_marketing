@@ -17,25 +17,25 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'OmniRide — Ethiopian Peer-to-Peer City Delivery',
-    template: '%s | OmniRide',
+    default: 'OmneRide — Ethiopian Peer-to-Peer City Delivery',
+    template: '%s | OmneRide',
   },
   description:
     'Connect with intercity travellers to send documents, parcels, and legal materials between Ethiopian cities safely and affordably.',
   keywords: ['Ethiopia delivery', 'peer-to-peer courier', 'intercity shipping', 'Ethiopian logistics'],
-  authors: [{ name: 'OmniRide Team' }],
+  authors: [{ name: 'OmneRide Team' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://omniride.et',
-    siteName: 'OmniRide',
+    url: 'https://omneride.com',
+    siteName: 'OmneRide',
     images: [{ url: 'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&q=80' }],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@omniride_et',
+    site: '@omneride_et',
   },
-  metadataBase: new URL('https://omniride.et'),
+  metadataBase: new URL('https://omneride.com'),
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

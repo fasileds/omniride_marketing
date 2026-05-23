@@ -75,8 +75,8 @@ export default async function BlogDetailPage({ params }: Props) {
     author: { '@type': 'Person', name: post.author_name },
     publisher: {
       '@type': 'Organization',
-      name: 'OmniRide',
-      logo: { '@type': 'ImageObject', url: 'https://omniride.et/logo.png' },
+      name: 'OmneRide',
+      logo: { '@type': 'ImageObject', url: 'https://omneride.com/logo.png' },
     },
   }
 
@@ -151,7 +151,7 @@ export default async function BlogDetailPage({ params }: Props) {
           </div>
           <div>
             <p className="font-semibold text-navy-900">{post.author_name}</p>
-            <p className="text-sm text-gray-500">OmniRide Team</p>
+            <p className="text-sm text-gray-500">OmneRide Team</p>
           </div>
         </div>
       </article>

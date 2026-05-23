@@ -33,7 +33,7 @@ export default function AdminSidebar() {
       {/* Logo */}
       <div className="px-6 py-5 border-b border-white/10">
         <Link href="/admin" className="font-display text-xl font-bold text-white">
-          <span className="text-gold-500">Omni</span>Ride
+          <span className="text-gold-500">Omne</span>Ride
           <span className="ml-2 text-xs font-normal text-navy-300 bg-white/10 px-2 py-0.5 rounded-full">Admin</span>
         </Link>
       </div>

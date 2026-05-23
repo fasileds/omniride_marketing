@@ -8,8 +8,8 @@ import { formatDateShort } from '@/lib/utils'
 
 export const metadata: Metadata = {
   title: 'Blog',
-  description: 'Insights, stories, and updates from the OmniRide team on Ethiopian logistics, community travel, and the future of peer-to-peer delivery.',
-  openGraph: { title: 'OmniRide Blog', description: 'Stories and insights from our team.' },
+  description: 'Insights, stories, and updates from the OmneRide team on Ethiopian logistics, community travel, and the future of peer-to-peer delivery.',
+  openGraph: { title: 'OmneRide Blog', description: 'Stories and insights from our team.' },
   twitter: { card: 'summary_large_image' },
 }
 
@@ -33,7 +33,7 @@ export default async function BlogListPage() {
       {/* Header */}
       <section className="pt-24 pb-12 bg-navy-900" aria-label="Blog header">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-white mb-4">OmniRide Blog</h1>
+          <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-white mb-4">OmneRide Blog</h1>
           <p className="text-navy-200 max-w-md mx-auto">
             Stories, guides, and updates from Ethiopia's peer-to-peer delivery community.
           </p>

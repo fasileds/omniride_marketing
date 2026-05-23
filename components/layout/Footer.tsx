@@ -26,7 +26,7 @@ const columns = [
       { label: 'FAQ',              href: '/faq' },
       { label: 'Safety Guidelines',href: '/faq#safety' },
       { label: 'Community Rules',  href: '/faq#community' },
-      { label: 'Contact Us',       href: 'mailto:hello@omniride.et' },
+      { label: 'Contact Us',       href: 'mailto:hello@omneride.et' },
     ],
   },
   {
@@ -73,14 +73,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" className="font-display text-2xl font-extrabold text-white inline-block mb-4">
-              <span className="text-gold-500">Omni</span>Ride
+              <span className="text-gold-500">Omne</span>Ride
             </Link>
             <p className="text-navy-400 text-sm leading-relaxed mb-5">
               Ethiopia's peer-to-peer intercity delivery platform, powered by everyday travellers.
             </p>
             <div className="flex flex-col gap-2">
-              <a href="mailto:hello@omniride.et" className="flex items-center gap-2 text-navy-400 text-sm hover:text-gold-500 transition-colors">
-                <Mail size={13} aria-hidden="true" /> hello@omniride.et
+              <a href="mailto:hello@omneride.et" className="flex items-center gap-2 text-navy-400 text-sm hover:text-gold-500 transition-colors">
+                <Mail size={13} aria-hidden="true" /> hello@omneride.et
               </a>
               <a href="tel:+251911000000" className="flex items-center gap-2 text-navy-400 text-sm hover:text-gold-500 transition-colors">
                 <Phone size={13} aria-hidden="true" /> +251 911 000 000
@@ -113,7 +113,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-navy-500 text-xs text-center sm:text-left">
-            &copy; {new Date().getFullYear()} OmniRide Technologies PLC. All rights reserved. · Addis Ababa, Ethiopia 🇪🇹
+            &copy; {new Date().getFullYear()} OmneRide Technologies PLC. All rights reserved. · Addis Ababa, Ethiopia 🇪🇹
           </p>
           <div className="flex items-center gap-3">
             {socials.map(({ Icon, href, label }) => (

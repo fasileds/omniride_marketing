@@ -116,7 +116,7 @@ export default function WaitlistForm() {
             <p className="text-gold-500 font-bold text-sm uppercase tracking-[0.2em] mb-4">Early Access</p>
             <h2 className="font-display text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-5">
               Be the first to<br />
-              <span className="text-gold-400">use OmniRide</span>
+              <span className="text-gold-400">use OmneRide</span>
             </h2>
             <p className="text-navy-300 text-lg leading-relaxed mb-8">
               We're launching in Addis Ababa first. Waitlist members get priority access, founding member badges, and reduced fees — forever.
@@ -185,8 +185,8 @@ export default function WaitlistForm() {
                   </p>
                   <p className="text-navy-400 text-sm mb-8">Check your inbox (and spam folder) for a welcome email with your next steps.</p>
                   <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-left">
-                    <p className="text-white text-sm font-semibold mb-1">📢 Share OmniRide</p>
-                    <p className="text-navy-300 text-xs leading-relaxed">Tell a friend about OmniRide and help us grow the community before launch!</p>
+                    <p className="text-white text-sm font-semibold mb-1">📢 Share OmneRide</p>
+                    <p className="text-navy-300 text-xs leading-relaxed">Tell a friend about OmneRide and help us grow the community before launch!</p>
                   </div>
                 </motion.div>
               ) : (

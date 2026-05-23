@@ -47,7 +47,7 @@ export default function CitiesContent() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            OmniRide covers {cities.length}+ cities across Ethiopia and growing.
+            OmneRide covers {cities.length}+ cities across Ethiopia and growing.
           </motion.p>
         </div>
       </section>

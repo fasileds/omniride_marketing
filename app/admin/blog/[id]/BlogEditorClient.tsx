@@ -31,7 +31,7 @@ export default function BlogEditorClient({ initialPost, postId }: Props) {
   const [readTime, setReadTime] = useState(initialPost?.read_time_minutes ?? 3)
   const [featured, setFeatured] = useState(initialPost?.featured ?? false)
   const [published, setPublished] = useState(initialPost?.published ?? false)
-  const [authorName, setAuthorName] = useState(initialPost?.author_name ?? 'OmniRide Team')
+  const [authorName, setAuthorName] = useState(initialPost?.author_name ?? 'OmneRide Team')
   const [metaTitle, setMetaTitle] = useState(initialPost?.meta_title ?? '')
   const [metaDesc, setMetaDesc] = useState(initialPost?.meta_description ?? '')
   const [seoOpen, setSeoOpen] = useState(false)
@@ -370,7 +370,7 @@ export default function BlogEditorClient({ initialPost, postId }: Props) {
                 {(metaTitle || title) && (
                   <div className="bg-gray-50 rounded-lg p-3 text-xs" aria-label="Google search preview">
                     <p className="text-[#1a0dab] font-medium truncate">{metaTitle || title}</p>
-                    <p className="text-[#006621] text-[10px]">omniride.et › blog › {slug}</p>
+                    <p className="text-[#006621] text-[10px]">omneride.et › blog › {slug}</p>
                     <p className="text-gray-600 line-clamp-2 mt-0.5">{metaDesc || excerpt}</p>
                   </div>
                 )}

@@ -76,7 +76,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          OmniRide connects everyday Ethiopian intercity travellers with people who need
+          OmneRide connects everyday Ethiopian intercity travellers with people who need
           to send documents, parcels, and legal materials between cities — safely, affordably, and fast.
         </motion.p>
 

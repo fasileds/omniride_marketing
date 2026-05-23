@@ -28,7 +28,7 @@ export default async function BlogPreview() {
           <div>
             <span className="text-gold-500 font-semibold text-sm uppercase tracking-widest">Blog</span>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-navy-900 mt-2">
-              Latest from OmniRide
+              Latest from OmneRide
             </h2>
           </div>
           <Link

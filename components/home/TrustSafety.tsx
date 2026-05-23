@@ -35,7 +35,7 @@ export default function TrustSafety() {
             <span className="text-gold-400">it's our foundation</span>
           </h2>
           <p className="text-navy-300 text-lg max-w-xl mx-auto leading-relaxed">
-            Every layer of OmniRide is built around protecting both senders and travellers from the first tap to final delivery.
+            Every layer of OmneRide is built around protecting both senders and travellers from the first tap to final delivery.
           </p>
         </motion.div>
 

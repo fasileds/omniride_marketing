@@ -16,8 +16,8 @@ export default function FaqError({
         </h2>
         <p className="text-gray-500 mb-6">
           Something went wrong. You can also reach us at{' '}
-          <a href="mailto:hello@omniride.et" className="text-navy-700 font-semibold">
-            hello@omniride.et
+          <a href="mailto:hello@omneride.et" className="text-navy-700 font-semibold">
+            hello@omneride.et
           </a>
         </p>
         <div className="flex gap-4 justify-center">

@@ -53,7 +53,8 @@ export const POST = withApiLog('/api/waitlist', async (request) => {
   }
 
   // Send welcome email via Resend (non-blocking — don't fail the request if email fails)
-  if (process.env.RESEND_API_KEY) {
+  const apiKey = process.env.RESEND_API_KEY
+  if (apiKey && apiKey !== 'placeholder') {
     const { subject, html } = welcomeEmail(full_name.trim(), role)
     resend.emails.send({
       from: FROM_EMAIL,
@@ -61,7 +62,15 @@ export const POST = withApiLog('/api/waitlist', async (request) => {
       to: email.trim().toLowerCase(),
       subject,
       html,
-    }).catch((err) => console.error('[Resend] Welcome email failed:', err))
+    })
+      .then(() => console.log(`[Resend] Welcome email sent → ${email.trim().toLowerCase()}`))
+      .catch((err: unknown) => {
+        const msg = err instanceof Error ? err.message : String(err)
+        console.error(`[Resend] Welcome email FAILED for ${email}: ${msg}`)
+        console.error('[Resend] Tip: verify your sending domain at https://resend.com/domains')
+      })
+  } else {
+    console.warn('[Resend] RESEND_API_KEY not configured — welcome email skipped')
   }
 
   return NextResponse.json({ success: true }, { status: 201 })

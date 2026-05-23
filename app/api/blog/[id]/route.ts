@@ -46,10 +46,17 @@ export const PATCH = withApiLog<RouteContext>(
     const justPublished = !before?.published && post.published
 
     // Send blog notification to all waitlist subscribers when a post is freshly published
-    if (justPublished && process.env.RESEND_API_KEY) {
-      sendBlogNotifications(supabase, post).catch((err) =>
-        console.error('[Resend] Blog notification failed:', err)
-      )
+    const apiKey = process.env.RESEND_API_KEY
+    if (justPublished && apiKey && apiKey !== 'placeholder') {
+      sendBlogNotifications(supabase, post)
+        .then((count) => console.log(`[Resend] Blog notification sent to ${count} subscribers for "${post.title}"`))
+        .catch((err: unknown) => {
+          const msg = err instanceof Error ? err.message : String(err)
+          console.error(`[Resend] Blog notification FAILED for "${post.title}": ${msg}`)
+          console.error('[Resend] Tip: verify your sending domain at https://resend.com/domains')
+        })
+    } else if (justPublished) {
+      console.warn('[Resend] RESEND_API_KEY not configured — blog notification skipped')
     }
 
     return NextResponse.json(post)
@@ -78,12 +85,12 @@ export const DELETE = withApiLog<RouteContext>(
 async function sendBlogNotifications(
   supabase: SupabaseClient,
   post: BlogPost
-) {
+): Promise<number> {
   const { data: subscribers } = await supabase
     .from('waitlist')
     .select('email, full_name')
 
-  if (!subscribers || subscribers.length === 0) return
+  if (!subscribers || subscribers.length === 0) return 0
 
   const entries = subscribers as Pick<WaitlistEntry, 'email' | 'full_name'>[]
   const { subject, html } = blogNotificationEmail({
@@ -109,5 +116,5 @@ async function sendBlogNotifications(
     })
   }
 
-  console.log(`[Resend] Sent blog notification for "${post.title}" to ${entries.length} subscribers`)
+  return entries.length
 }

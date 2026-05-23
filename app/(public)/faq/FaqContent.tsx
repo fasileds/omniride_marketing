@@ -11,12 +11,12 @@ interface FaqItem {
 }
 
 const faqs: FaqItem[] = [
-  { category: 'General', q: 'What is OmniRide?', a: 'OmniRide is an Ethiopian peer-to-peer delivery platform that connects people who need to send items (documents, parcels, legal materials) between Ethiopian cities with verified travellers already making those journeys.' },
-  { category: 'General', q: 'When will OmniRide launch?', a: 'We are launching in Addis Ababa in Q3 2025, with rapid expansion to Bahir Dar, Hawassa, and Dire Dawa in the following quarter. Join our waitlist to get priority access.' },
+  { category: 'General', q: 'What is OmneRide?', a: 'OmneRide is an Ethiopian peer-to-peer delivery platform that connects people who need to send items (documents, parcels, legal materials) between Ethiopian cities with verified travellers already making those journeys.' },
+  { category: 'General', q: 'When will OmneRide launch?', a: 'We are launching in Addis Ababa in Q3 2025, with rapid expansion to Bahir Dar, Hawassa, and Dire Dawa in the following quarter. Join our waitlist to get priority access.' },
   { category: 'Senders', q: 'What can I send?', a: 'Documents, parcels up to 20kg, legal filings, gifts, electronics, and traditional goods. Prohibited items include cash, contraband, live animals, and hazardous materials.' },
   { category: 'Senders', q: 'How much does it cost?', a: 'Pricing is based on distance, weight, and urgency. Our flat-rate model is typically 60–80% cheaper than traditional couriers. You see the price upfront before confirming.' },
   { category: 'Senders', q: 'What if my item is lost or damaged?', a: 'All deliveries include our protection guarantee up to 10,000 ETB. For high-value items, you can add extra insurance at checkout.' },
-  { category: 'Travellers', q: 'How do I earn with OmniRide?', a: 'Create a traveller profile, log your upcoming trip route and date, browse delivery requests on your route, accept the ones that fit, pick up before departure, and deliver on arrival. Earnings go to your wallet immediately.' },
+  { category: 'Travellers', q: 'How do I earn with OmneRide?', a: 'Create a traveller profile, log your upcoming trip route and date, browse delivery requests on your route, accept the ones that fit, pick up before departure, and deliver on arrival. Earnings go to your wallet immediately.' },
   { category: 'Travellers', q: 'Do I need a special vehicle?', a: 'No. You just need to be making the trip anyway — by bus, minibus, or private vehicle. You carry items as hand luggage or checked baggage.' },
   { category: 'Safety', q: 'How do you verify travellers?', a: 'Every traveller submits a government-issued ID, a selfie, and a phone number. We run a background check and require 3 community references before approving their first delivery.', },
   { category: 'Safety', q: 'What are the community rules?', a: 'Both senders and travellers must respect agreed pickup/dropoff times, communicate promptly through the app, and keep items in the condition received. Violations result in suspension.', },
@@ -87,8 +87,8 @@ export default function FaqContent() {
             transition={{ delay: 0.2 }}
           >
             Can't find what you need? Email{' '}
-            <a href="mailto:hello@omniride.et" className="text-gold-400 hover:text-gold-300">
-              hello@omniride.et
+            <a href="mailto:hello@omneride.et" className="text-gold-400 hover:text-gold-300">
+              hello@omneride.et
             </a>
           </motion.p>
         </div>

@@ -175,7 +175,7 @@ export default function HowItWorksContent() {
           <h2 className="font-display text-3xl font-bold text-navy-900 mb-4">
             Ready to get started?
           </h2>
-          <p className="text-navy-800 mb-8">Join thousands on our waitlist and be first to access OmniRide.</p>
+          <p className="text-navy-800 mb-8">Join thousands on our waitlist and be first to access OmneRide.</p>
           <Link
             href="/#waitlist"
             className="inline-flex items-center gap-2 bg-navy-900 text-white px-8 py-3.5 rounded-full font-bold hover:bg-navy-800 transition-colors"

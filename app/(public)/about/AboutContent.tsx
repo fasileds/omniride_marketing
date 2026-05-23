@@ -55,7 +55,7 @@ export default function AboutContent() {
               Connecting Ethiopia, one trip at a time
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              OmniRide was born from a simple frustration: sending a legal document from Addis Ababa to
+              OmneRide was born from a simple frustration: sending a legal document from Addis Ababa to
               Bahir Dar reliably shouldn't take a week. Ethiopia has millions of intercity travellers
               making the same journeys every day — we simply put them to work for the community.
             </p>
@@ -136,14 +136,14 @@ export default function AboutContent() {
           <h2 className="font-display text-2xl font-bold text-navy-900 mb-4" id="careers">Press & Careers</h2>
           <p className="text-gray-500 mb-6">
             We're always looking for mission-driven people. Send your CV to{' '}
-            <a href="mailto:careers@omniride.et" className="text-navy-700 font-semibold hover:text-gold-600">
-              careers@omniride.et
+            <a href="mailto:careers@omneride.et" className="text-navy-700 font-semibold hover:text-gold-600">
+              careers@omneride.et
             </a>
           </p>
           <p className="text-gray-500">
             For press inquiries:{' '}
-            <a href="mailto:press@omniride.et" className="text-navy-700 font-semibold hover:text-gold-600">
-              press@omniride.et
+            <a href="mailto:press@omneride.et" className="text-navy-700 font-semibold hover:text-gold-600">
+              press@omneride.et
             </a>
           </p>
         </div>

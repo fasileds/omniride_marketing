@@ -45,8 +45,8 @@ export default function Navbar() {
         aria-label="Main navigation"
       >
         {/* Logo */}
-        <Link href="/" className="font-display text-xl font-extrabold text-white flex items-center gap-0.5" aria-label="OmniRide home">
-          <span className="text-gold-500">Omni</span><span>Ride</span>
+        <Link href="/" className="font-display text-xl font-extrabold text-white flex items-center gap-0.5" aria-label="OmneRide home">
+          <span className="text-gold-500">Omne</span><span>Ride</span>
         </Link>
 
         {/* Desktop links */}

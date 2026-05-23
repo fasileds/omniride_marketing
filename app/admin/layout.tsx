@@ -1,7 +1,7 @@
 import AdminSidebar from '@/components/admin/AdminSidebar'
 
 export const metadata = {
-  title: { default: 'Admin | OmniRide', template: '%s | Admin | OmniRide' },
+  title: { default: 'Admin | OmneRide', template: '%s | Admin | OmneRide' },
 }
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {

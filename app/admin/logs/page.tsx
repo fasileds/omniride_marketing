@@ -3,7 +3,7 @@ import LogsClient from './LogsClient'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'API Logs | OmniRide Admin',
+  title: 'API Logs | OmneRide Admin',
   description: 'Monitor all API calls, success rates, and errors',
 }
 
