@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem \"C:\\\\Users\\\\Admi n\\\\my-project\\\\omneRide\\\\omneride_marcketing\" -Recurse)",
+      "Bash(Select-Object FullName)",
+      "Bash(find \"/mnt/c/Users/Admi n/my-project/omneRide/omneride_marcketing\" -maxdepth 3 2>/dev/null | head -30)",
+      "Bash(npm install *)",
+      "PowerShell($job = Start-Job { Set-Location \"C:\\\\Users\\\\Admi n\\\\my-project\\\\omneRide\\\\omneride_marcketing\"; npm install --legacy-peer-deps 2>&1 }; Wait-Job $job -Timeout 300 | Out-Null; Receive-Job $job | Select-Object -Last 15)",
+      "PowerShell(Set-Location \"C:\\\\Users\\\\Admi n\\\\my-project\\\\omneRide\\\\omneride_marcketing\"; $env:PATH = \"$env:APPDATA\\\\npm;$env:PATH\"; npm install 2>&1)",
+      "PowerShell(Set-Location \"C:\\\\Users\\\\Admi n\\\\my-project\\\\omneRide\\\\omneride_marcketing\"; $env:NEXT_PUBLIC_SUPABASE_URL=\"https://luthoceqcogkaadkncuz.supabase.co\"; $env:NEXT_PUBLIC_SUPABASE_ANON_KEY=\"placeholder-anon-key\"; $env:SUPABASE_SERVICE_ROLE_KEY=\"placeholder-service-key\"; npx next build 2>&1)",
+      "PowerShell(netstat -ano)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3200\" -TimeoutSec 5 -UseBasicParsing; \"HTTP $\\($r.StatusCode\\) — server is responding\" } catch { \"Error: $_\" })",
+      "PowerShell($t = New-Object System.Net.Sockets.TcpClient; try { $t.Connect\\(\"localhost\", 3200\\); \"TCP connect SUCCESS — server is live on port 3200\" } catch { \"TCP connect failed: $_\" } finally { $t.Close\\(\\) })",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)",
+      "Bash(Get-Process -Name \"node\" -ErrorAction SilentlyContinue)",
+      "Bash(Stop-Process -Force -ErrorAction SilentlyContinue)",
+      "Bash(Start-Sleep -Milliseconds 800)"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+
+> omneride-marketing@0.1.0 dev
+> next dev -p 3200
+
+  ▲ Next.js 14.2.18
+  - Local:        http://localhost:3200
+  - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 3.9s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 2.1s (125 modules)
+ ○ Compiling /admin/login ...
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (101kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (231kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+ ✓ Compiled /admin/login in 11.1s (683 modules)
+ GET /admin/login 200 in 12150ms
+ ✓ Compiled in 1133ms (341 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 7.8s (1577 modules)
+ GET / 200 in 16027ms
+ ○ Compiling /api/waitlist/check ...
+ ✓ Compiled /api/waitlist/check in 742ms (794 modules)
+ ○ Compiling /api/waitlist ...
+ ✓ Compiled /api/waitlist in 1605ms (1028 modules)
+ GET /api/waitlist/check?email=fasiledesshmels09%40gmail.com 200 in 9857ms
+Waitlist insert error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '\n' +
+    'Caused by: Error: getaddrinfo ENOTFOUND placeholder.supabase.co (ENOTFOUND)\n' +
+    'Error: getaddrinfo ENOTFOUND placeholder.supabase.co\n' +
+    '    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)\n' +
+    '    at GetAddrInfoReqWrap.callbackTrampoline (node:internal/async_hooks:130:17)',
+  hint: '',
+  code: ''
+}
+ POST /api/waitlist 500 in 8907ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 751ms (1768 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1050ms
+Waitlist insert error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '\n' +
+    'Caused by: Error: getaddrinfo ENOTFOUND placeholder.supabase.co (ENOTFOUND)\n' +
+    'Error: getaddrinfo ENOTFOUND placeholder.supabase.co\n' +
+    '    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)\n' +
+    '    at GetAddrInfoReqWrap.callbackTrampoline (node:internal/async_hooks:130:17)',
+  hint: '',
+  code: ''
+}
+ POST /api/waitlist 500 in 7157ms
